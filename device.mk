@@ -41,10 +41,10 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Pocket mode
 PRODUCT_PACKAGES += \
-    OnePlusPocketMode
+    ZenFonePocketMode
 
 # Inherit from asus sdm845-common
-#$(call inherit-product, device/asus/sdm845-common/common.mk)
+$(call inherit-product, device/asus/sdm845-common/common.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/asus/Z01R/Z01R-vendor.mk)
